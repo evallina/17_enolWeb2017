@@ -26,10 +26,18 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9] -->
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Image Viewer -->
+    <script src="css/imageviewer.css"  rel="stylesheet" type="text/css" ></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/imageviewer.js"></script>
+
+
+
 
 </head>
 
@@ -43,7 +51,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Enol Vallina</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,17 +61,21 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Intro</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Selected Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Timeline</a>
                     </li>
+<!--
+
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
+
+-->
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -78,9 +90,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+               <!-- <div class="intro-lead-in">Welcome To Our Studio!</div>-->
+                <div class="intro-heading">Enol Vallina</div>
+                <a href="#services"> <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
             </div>
         </div>
     </header>
@@ -89,35 +101,61 @@
     <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="col-lg-12 text-left">
+                    <h2 class="section-heading">Intro</h2>
+                    <br class="section-subheading text-muted">
+                    I am an Architect and Urban Designer. Since fall 2015, I am doing a Master in Design Studies
+                    Candidate, doing the Technology concentration, at Harvard Graduate School of Design.
+                    </br></br>
+                    After graduating in Architecture at Ramon Llull University in Barcelona, I have expanded my academic
+                    background by doing a Master in Urban Design at the Bartlett School of Architecture, University
+                    College of London. Several years practicing Architecture and Urban Design in influential studios
+                    such as ‘Thomas Heatherwick’ and ‘Skidmore, Owings & Merrill’ made me to actively participate in the
+                    design of a wide range of urban regeneration projects around the world.
+                    </br></br>
+                    These experiences aroused a distinct interest in how a technologically driven society is changing
+                    the way that the Urban Environment is perceived; and especially, it raised the question of how the
+                    implementation of emerging immersive technologies can inform the design and planning of open spaces.
+                    Today, this interest has become the main theme that drives my explorations at the school.</h3>
+                    </br></br></br></br>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-street-view fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Thinking Urban</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Technology</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Experiences</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
             </div>
         </div>
@@ -243,7 +281,9 @@
                                     <h4 class="subheading">Our Humble Beginnings</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -257,7 +297,9 @@
                                     <h4 class="subheading">An Agency is Born</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -271,7 +313,9 @@
                                     <h4 class="subheading">Transition to Full Service</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -285,8 +329,17 @@
                                     <h4 class="subheading">Phase Two Expansion</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+                                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
                             </div>
                         </li>
                         <li class="timeline-inverted">
@@ -302,7 +355,7 @@
         </div>
     </section>
 
-    <!-- Team Section -->
+   <!-- &lt;!&ndash; Team Section &ndash;&gt;
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -366,7 +419,7 @@
         </div>
     </section>
 
-    <!-- Clients Aside -->
+    &lt;!&ndash; Clients Aside &ndash;&gt;
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -392,15 +445,15 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside>-->
 
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Contact</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
             </div>
             <div class="row">
@@ -417,7 +470,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Your Phone " id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
